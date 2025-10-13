@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Website Sederhana | Cristoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="text-slate-200">
+    <div class="aurora-background"></div>
+    <div class="relative min-h-screen">
+      <nav
+        class="sticky top-4 z-50 mx-4 md:mx-8 bg-gray-900/50 dark:bg-gray-900/50 backdrop-blur-xl shadow-2xl shadow-black/20 rounded-2xl border border-white/10 dark:border-white/10 fade-in-up"
+      >
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <a href="index.html" class="text-2xl font-bold text-white"
+            >Cristoval P.S.</a
+          >
+          <ul
+            class="hidden md:flex items-center font-semibold text-gray-200 space-x-8"
+          >
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="pengenalan.html"
+                class="hover:text-white transition-colors"
+                >Pengenalan</a
+              >
+            </li>
+            <li>
+              <a href="tutorial.html" class="hover:text-white transition-colors"
+                >Tutorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="kesan-pesan.html"
+                class="hover:text-white transition-colors"
+                >Kesan & Pesan</a
+              >
+            </li>
+          </ul>
+          <div id="darkModeToggleContainer"></div>
+        </div>
+      </nav>
+
+      <main class="container mx-auto p-4 md:p-8">
+        <div
+          class="bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/20 border border-white/10 p-8 md:p-12 fade-in-up"
+        >
+          <section class="text-center mb-16">
+            <div class="flex justify-center items-center gap-4">
+              <i
+                class="fa-solid fa-person-chalkboard text-5xl text-sky-400"
+              ></i>
+              <h1 class="text-5xl font-bold text-gradient leading-tight">
+                Tutorial Lengkap: Membuat Website Biodata Pribadi
+              </h1>
+            </div>
+            <p
+              class="text-slate-300 max-w-3xl mx-auto mt-6 text-lg leading-relaxed"
+            >
+              Panduan komprehensif untuk pemula yang ingin membuat website
+              biodata pribadi pertama mereka. Tutorial ini akan membimbing Anda
+              langkah demi langkah dengan penjelasan mendetail untuk setiap
+              bagian kode, sehingga Anda benar-benar memahami apa yang sedang
+              dibuat.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <div
+                class="bg-sky-500/20 px-4 py-2 rounded-lg border border-sky-500/30"
+              >
+                <i class="fab fa-html5 text-orange-500 mr-2"></i>HTML
+              </div>
+              <div
+                class="bg-blue-500/20 px-4 py-2 rounded-lg border border-blue-500/30"
+              >
+                <i class="fab fa-css3-alt text-blue-500 mr-2"></i>CSS
+              </div>
+              <div
+                class="bg-yellow-500/20 px-4 py-2 rounded-lg border border-yellow-500/30"
+              >
+                <i class="fab fa-js text-yellow-400 mr-2"></i>JavaScript
+              </div>
+              <div
+                class="bg-green-500/20 px-4 py-2 rounded-lg border border-green-500/30"
+              >
+                <i class="fas fa-mobile-alt text-green-400 mr-2"></i>Responsif
+              </div>
+            </div>
+          </section>
+
+          <div class="space-y-12">
+            <!-- Persiapan -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-solid fa-toolbox text-3xl text-amber-400"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Persiapan: Software dan Tools yang Diperlukan
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-6 leading-relaxed">
+                Sebelum memulai perjalanan coding, kita perlu menyiapkan
+                alat-alat yang akan digunakan. Berikut adalah software yang
+                perlu diinstal dan dipersiapkan:
+              </p>
+
+              <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                  <h3
+                    class="font-semibold text-xl text-slate-100 mb-3 flex items-center"
+                  >
+                    <i class="fas fa-code text-blue-400 mr-2"></i>
+                    Text Editor: Visual Studio Code
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+                    VS Code adalah text editor modern yang memiliki fitur
+                    lengkap untuk web development. Sangat direkomendasikan untuk
+                    pemula karena antarmukanya yang user-friendly.
+                  </p>
+
+                  <h4 class="font-semibold text-slate-100 mb-3">
+                    Tutorial Instalasi VS Code:
+                  </h4>
+                  <div
+                    class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden"
+                  >
+                    <iframe
+                      src="https://www.youtube.com/embed/xkMfMJn5Smg"
+                      title="Tutorial Instalasi VS Code"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      class="w-full h-64 rounded-lg"
+                    ></iframe>
+                  </div>
+
+                  <div class="space-y-2">
+                    <a
+                      href="https://code.visualstudio.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                    >
+                      <i class="fas fa-download mr-2"></i>Download VS Code
+                      (Official)
+                    </a>
+                  </div>
+                </div>
+
+                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                  <h3
+                    class="font-semibold text-xl text-slate-100 mb-3 flex items-center"
+                  >
+                    <i class="fas fa-globe text-green-400 mr-2"></i>
+                    Web Browser: Chrome/Firefox
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+                    Gunakan browser modern seperti Chrome atau Firefox untuk
+                    testing. Browser ini memiliki developer tools yang sangat
+                    membantu dalam debugging.
+                  </p>
+                  <div class="space-y-2">
+                    <a
+                      href="https://www.google.com/chrome/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                    >
+                      <i class="fab fa-chrome mr-2"></i>Download Google Chrome
+                    </a>
+                    <a
+                      href="https://www.mozilla.org/firefox/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                    >
+                      <i class="fab fa-firefox mr-2"></i>Download Mozilla
+                      Firefox
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Langkah 1: Struktur Folder -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-solid fa-folder-tree text-3xl text-orange-500"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Langkah 1: Membuat Struktur Folder Proyek
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Organisasi file yang baik adalah kunci dari proyek web yang
+                rapi. Kita akan membuat struktur folder yang logis untuk
+                menyimpan semua file proyek.
+              </p>
+
+              <div
+                class="bg-black/20 p-6 rounded-2xl border border-white/10 mb-6"
+              >
+                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                  <i class="fas fa-list-ol text-purple-400 mr-2"></i>
+                  Langkah-langkah Membuat Struktur:
+                </h3>
+                <ol class="list-decimal list-inside text-slate-300 space-y-4">
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Buat Folder Utama:</b> Buat folder baru di komputer
+                    dengan nama
+                    <code class="bg-gray-800 px-2 py-1 rounded"
+                      >website-biodata-saya</code
+                    >
+                  </li>
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Buka di VS Code:</b> Buka VS Code, lalu pilih
+                    <code class="bg-gray-800 px-2 py-1 rounded"
+                      >File > Open Folder</code
+                    >
+                    dan pilih folder yang baru saja dibuat
+                  </li>
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Buat Subfolder dan File:</b> Di dalam panel Explorer VS
+                    Code, buat struktur berikut:
+                    <div
+                      class="mt-2 bg-gray-900 p-4 rounded-lg font-mono text-sm"
+                    >
+                      <div>website-biodata-saya/</div>
+                      <div class="ml-4">├── images/</div>
+                      <div class="ml-8">└── foto-profil.jpg</div>
+                      <div class="ml-4">├── index.html</div>
+                      <div class="ml-4">├── style.css</div>
+                      <div class="ml-4">└── script.js</div>
+                    </div>
+                  </li>
+                  <li>
+                    <b>Tambahkan Foto:</b> Cari foto profil Anda dan simpan di
+                    folder
+                    <code class="bg-gray-800 px-2 py-1 rounded">images</code>
+                    dengan nama
+                    <code class="bg-gray-800 px-2 py-1 rounded"
+                      >foto-profil.jpg</code
+                    >
+                  </li>
+                </ol>
+              </div>
+
+              <div
+                class="bg-amber-500/10 p-4 rounded-lg border border-amber-500/20"
+              >
+                <h4 class="font-semibold text-amber-300 mb-2 flex items-center">
+                  <i class="fas fa-lightbulb mr-2"></i>Tips Penting:
+                </h4>
+                <ul class="text-slate-300 list-disc list-inside space-y-1">
+                  <li>Gunakan nama file yang konsisten dan deskriptif</li>
+                  <li>
+                    Hindari spasi dalam nama file, gunakan tanda hubung (-)
+                    sebagai pengganti
+                  </li>
+                  <li>Pastikan ekstensi file benar (.html, .css, .js)</li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Langkah 2: HTML -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-html5 text-3xl text-orange-500"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Langkah 2: Membangun Struktur dengan HTML
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                HTML adalah kerangka website kita. Di langkah ini, kita akan
+                membuat struktur dasar halaman web yang berisi semua elemen yang
+                ingin ditampilkan.
+              </p>
+
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                  <i class="fas fa-file-code text-orange-400 mr-2"></i>
+                  File: index.html
+                </h3>
+                <p class="text-slate-300 mb-4">
+                  Salin kode berikut ke dalam file
+                  <code class="bg-gray-800 px-2 py-1 rounded">index.html</code>
+                  Anda:
+                </p>
+
+                <div
+                  class="bg-gray-900 p-4 rounded-lg overflow-x-auto max-h-96"
+                >
+                  <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Website Biodata Pribadi&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Tombol Toggle Dark Mode --&gt;
+    &lt;button id="darkModeToggle"&gt;🌙 Dark Mode&lt;/button&gt;
+
+    &lt;!-- Kartu Biodata Utama --&gt;
+    &lt;div class="card"&gt;
+        &lt;div class="biodata"&gt;
+            &lt;div class="foto-profil"&gt;
+                &lt;img src="images/foto-profil.jpg" class="image" alt="Foto Profil"&gt;
+            &lt;/div&gt;
+            &lt;div class="info-pribadi"&gt;
+                &lt;h1&gt;Cristoval Prayoga Satria&lt;/h1&gt;
+                &lt;h3&gt;NIM: 123456789&lt;/h3&gt;
+                &lt;h3&gt;KOM: ABC&lt;/h3&gt;
+                &lt;div class="social-links"&gt;
+                    &lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href="#" class="social-link"&gt;&lt;i class="fab fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="hobi-dan-moto"&gt;
+            &lt;h4&gt;HOBI:&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;i class="fas fa-code"&gt;&lt;/i&gt; Pemrograman&lt;/li&gt;
+                &lt;li&gt;&lt;i class="fas fa-book"&gt;&lt;/i&gt; Membaca&lt;/li&gt;
+                &lt;li&gt;&lt;i class="fas fa-music"&gt;&lt;/i&gt; Bermain Musik&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;h4&gt;MOTO HIDUP:&lt;/h4&gt;
+            &lt;p class="moto"&gt;"Jangan menyerah, mulai saja dulu. Konsistensi adalah kunci keberhasilan."&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="perkenalan"&gt;
+            &lt;h4&gt;Tentang Saya:&lt;/h4&gt;
+            &lt;p&gt;
+                Halo! Saya adalah mahasiswa Teknik Informatika yang antusias dengan dunia pemrograman 
+                dan pengembangan web. Saya senang mempelajari teknologi baru dan menerapkannya dalam 
+                proyek-proyek praktis. Website ini adalah salah satu hasil belajar saya dalam 
+                mengembangkan front-end web.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Tabel Jadwal Kuliah --&gt;
+    &lt;div class="jadwal-kuliah"&gt;
+        &lt;h4&gt;Jadwal Kuliah Semester Ini&lt;/h4&gt;
+        &lt;table&gt;
+            &lt;thead&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;HARI&lt;/th&gt;
+                    &lt;th&gt;PUKUL&lt;/th&gt;
+                    &lt;th&gt;MATA KULIAH&lt;/th&gt;
+                    &lt;th&gt;RUANGAN&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Senin&lt;/td&gt;
+                    &lt;td&gt;08:00 - 10:00&lt;/td&gt;
+                    &lt;td&gt;Pemrograman Web&lt;/td&gt;
+                    &lt;td&gt;Lab. Komputer A&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Selasa&lt;/td&gt;
+                    &lt;td&gt;10:00 - 12:00&lt;/td&gt;
+                    &lt;td&gt;Basis Data&lt;/td&gt;
+                    &lt;td&gt;Gedung B, Ruang 301&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Rabu&lt;/td&gt;
+                    &lt;td&gt;13:00 - 15:00&lt;/td&gt;
+                    &lt;td&gt;Jaringan Komputer&lt;/td&gt;
+                    &lt;td&gt;Lab. Jaringan&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Kamis&lt;/td&gt;
+                    &lt;td&gt;15:00 - 17:00&lt;/td&gt;
+                    &lt;td&gt;Algoritma &amp; Struktur Data&lt;/td&gt;
+                    &lt;td&gt;Gedung C, Ruang 102&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+
+                <div
+                  class="mt-6 bg-blue-500/10 p-4 rounded-lg border border-blue-500/20"
+                >
+                  <h4
+                    class="font-semibold text-blue-300 mb-2 flex items-center"
+                  >
+                    <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
+                    Struktur HTML:
+                  </h4>
+                  <div class="text-slate-300 space-y-4">
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        1. Deklarasi DOCTYPE dan Elemen HTML
+                      </h5>
+                      <p>
+                        <code>&lt;!DOCTYPE html&gt;</code> - Menentukan bahwa
+                        dokumen ini menggunakan HTML5.
+                      </p>
+                      <p>
+                        <code>&lt;html lang="id"&gt;</code> - Elemen root dengan
+                        atribut bahasa Indonesia.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        2. Bagian Head (Informasi Meta)
+                      </h5>
+                      <p>
+                        <code>&lt;meta charset="UTF-8"&gt;</code> - Menentukan
+                        encoding karakter untuk mendukung huruf internasional.
+                      </p>
+                      <p>
+                        <code>&lt;meta name="viewport"&gt;</code> - Membuat
+                        halaman responsif di perangkat mobile.
+                      </p>
+                      <p>
+                        <code>&lt;title&gt;</code> - Judul yang muncul di tab
+                        browser.
+                      </p>
+                      <p>
+                        <code>&lt;link rel="stylesheet"&gt;</code> -
+                        Menghubungkan file CSS eksternal.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        3. Bagian Body (Konten yang Ditampilkan)
+                      </h5>
+                      <p>
+                        <code>&lt;button id="darkModeToggle"&gt;</code> - Tombol
+                        untuk mengganti tema gelap/terang.
+                      </p>
+                      <p>
+                        <code>&lt;div class="card"&gt;</code> - Container utama
+                        untuk kartu biodata.
+                      </p>
+                      <p>
+                        <code>&lt;div class="biodata"&gt;</code> - Bagian untuk
+                        foto dan informasi pribadi.
+                      </p>
+                      <p>
+                        <code>&lt;img&gt;</code> - Elemen untuk menampilkan foto
+                        profil.
+                      </p>
+                      <p>
+                        <code>&lt;h1&gt;, &lt;h3&gt;, &lt;h4&gt;</code> -
+                        Heading dengan tingkat kepentingan berbeda.
+                      </p>
+                      <p>
+                        <code>&lt;ul&gt; dan &lt;li&gt;</code> - List tidak
+                        terurut untuk menampilkan hobi.
+                      </p>
+                      <p>
+                        <code>&lt;table&gt;</code> - Membuat tabel untuk jadwal
+                        kuliah dengan <code>&lt;thead&gt;</code> (header) dan
+                        <code>&lt;tbody&gt;</code> (body).
+                      </p>
+                      <p>
+                        <code>&lt;tr&gt;</code> - Baris tabel,
+                        <code>&lt;th&gt;</code> - sel header,
+                        <code>&lt;td&gt;</code> - sel data.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        4. Class dan ID yang Digunakan
+                      </h5>
+                      <p>
+                        <code>class="card"</code> - Styling untuk kartu biodata.
+                      </p>
+                      <p>
+                        <code>class="biodata"</code> - Mengatur layout foto dan
+                        info pribadi.
+                      </p>
+                      <p>
+                        <code>class="image"</code> - Styling khusus untuk foto
+                        profil.
+                      </p>
+                      <p>
+                        <code>id="darkModeToggle"</code> - Identifikasi unik
+                        untuk tombol dark mode.
+                      </p>
+                      <p>
+                        <code>class="social-links"</code> - Container untuk link
+                        media sosial.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Langkah 3: CSS -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-css3-alt text-3xl text-blue-500"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Langkah 3: Menghias dengan CSS
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                CSS memberikan kehidupan visual pada struktur HTML kita. Di
+                langkah ini, kita akan membuat website terlihat menarik dengan
+                warna, layout, dan efek visual.
+              </p>
+
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                  <i class="fas fa-palette text-blue-400 mr-2"></i>
+                  File: style.css
+                </h3>
+                <p class="text-slate-300 mb-4">
+                  Salin kode CSS berikut ke dalam file
+                  <code class="bg-gray-800 px-2 py-1 rounded">style.css</code>:
+                </p>
+
+                <div
+                  class="bg-gray-900 p-4 rounded-lg overflow-x-auto max-h-96"
+                >
+                  <pre><code class="language-css">/* ===== VARIABEL CSS UNTUK WARNA ===== */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #2b6cb0;
+    --text-light: #333;
+    --text-dark: #e2e8f0;
+    --bg-light: #f5f7fa;
+    --bg-dark: #1a202c;
+    --card-light: #ffffff;
+    --card-dark: #2d3748;
+    --border-light: #ddd;
+    --border-dark: #4a5568;
+}
+
+/* ===== STYLE DASAR (LIGHT MODE) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+/* ===== TOMBOL DARK MODE ===== */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    cursor: pointer;
+    background-color: var(--card-light);
+    color: var(--text-light);
+    font-weight: 600;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#darkModeToggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== KARTU BIODATA ===== */
+.card, .jadwal-kuliah {
+    background-color: var(--card-light);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.card:hover, .jadwal-kuliah:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    transform: translateY(-5px);
+}
+
+/* ===== BAGIAN BIODATA ===== */
+.biodata {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 25px;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.info-pribadi h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.info-pribadi h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* ===== HOBI DAN MOTO ===== */
+.hobi-dan-moto {
+    margin-bottom: 25px;
+}
+
+.hobi-dan-moto h4, .perkenalan h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.hobi-dan-moto ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.hobi-dan-moto li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hobi-dan-moto li i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.moto {
+    font-style: italic;
+    background-color: rgba(74, 144, 226, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* ===== TABEL JADWAL KULIAH ===== */
+.jadwal-kuliah h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: var(--card-dark);
+    color: var(--text-dark);
+    border: 1px solid var(--border-dark);
+}
+
+body.dark-mode .card,
+body.dark-mode .jadwal-kuliah {
+    background-color: var(--card-dark);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .info-pribadi h1,
+body.dark-mode .jadwal-kuliah h4 {
+    color: var(--text-dark);
+}
+
+body.dark-mode .info-pribadi h3 {
+    color: #a0aec0;
+}
+
+body.dark-mode .image {
+    border-color: var(--secondary-color);
+}
+
+body.dark-mode th {
+    background-color: var(--secondary-color);
+}
+
+body.dark-mode td {
+    border-bottom: 1px solid var(--border-dark);
+    color: var(--text-dark);
+}
+
+body.dark-mode tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.05);
+}
+
+body.dark-mode .moto {
+    background-color: rgba(43, 108, 176, 0.2);
+    border-left-color: var(--secondary-color);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .card, .jadwal-kuliah {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .biodata {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .image {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .info-pribadi h1 {
+        font-size: 24px;
+    }
+    
+    #darkModeToggle {
+        top: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card, .jadwal-kuliah {
+        padding: 15px;
+    }
+    
+    .info-pribadi h1 {
+        font-size: 22px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}</code></pre>
+                </div>
+
+                <div
+                  class="mt-6 bg-blue-500/10 p-4 rounded-lg border border-blue-500/20"
+                >
+                  <h4
+                    class="font-semibold text-blue-300 mb-2 flex items-center"
+                  >
+                    <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
+                    CSS:
+                  </h4>
+                  <div class="text-slate-300 space-y-4">
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        1. Variabel CSS (:root)
+                      </h5>
+                      <p>
+                        Mendefinisikan variabel warna untuk konsistensi dan
+                        kemudahan perubahan tema.
+                      </p>
+                      <p>
+                        <code>--primary-color</code> - Warna utama (biru),
+                        <code>--secondary-color</code> - Warna sekunder (biru
+                        tua)
+                      </p>
+                      <p>
+                        <code>--text-light/dark</code> - Warna teks untuk tema
+                        terang/gelap
+                      </p>
+                      <p>
+                        <code>--bg-light/dark</code> - Warna background untuk
+                        tema terang/gelap
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        2. Reset dan Style Dasar
+                      </h5>
+                      <p>
+                        <code
+                          >* { margin: 0; padding: 0; box-sizing: border-box;
+                          }</code
+                        >
+                        - Reset default browser dan membuat perhitungan ukuran
+                        lebih mudah.
+                      </p>
+                      <p>
+                        <code>body</code> - Mengatur font, background, layout
+                        flexbox, dan transisi untuk perubahan tema.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        3. Styling Komponen
+                      </h5>
+                      <p>
+                        <code>#darkModeToggle</code> - Tombol dengan posisi
+                        fixed, efek hover, dan transisi.
+                      </p>
+                      <p>
+                        <code>.card, .jadwal-kuliah</code> - Container dengan
+                        background, shadow, border-radius, dan efek hover.
+                      </p>
+                      <p>
+                        <code>.biodata</code> - Menggunakan flexbox untuk layout
+                        horizontal foto dan info.
+                      </p>
+                      <p>
+                        <code>.image</code> - Foto profil dengan bentuk bulat,
+                        border, dan efek hover scale.
+                      </p>
+                      <p>
+                        <code>.social-links</code> - Container flexbox untuk
+                        ikon media sosial.
+                      </p>
+                      <p>
+                        <code>.social-link</code> - Ikon bulat dengan transisi
+                        dan efek hover.
+                      </p>
+                      <p>
+                        <code>table</code> - Tabel dengan border-collapse,
+                        shadow, dan styling sel.
+                      </p>
+                      <p>
+                        <code>tr:nth-child(even)</code> - Warna alternating
+                        untuk baris tabel.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        4. Dark Mode Styles
+                      </h5>
+                      <p>
+                        <code>body.dark-mode</code> - Mengubah warna background
+                        dan teks saat dark mode aktif.
+                      </p>
+                      <p>
+                        Semua class dengan prefix
+                        <code>.dark-mode</code> mengoverride nilai variabel CSS
+                        untuk tema gelap.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        5. Media Queries (Responsive Design)
+                      </h5>
+                      <p>
+                        <code>@media (max-width: 768px)</code> - Style untuk
+                        tablet dan layar kecil.
+                      </p>
+                      <p>
+                        <code>@media (max-width: 480px)</code> - Style untuk
+                        mobile phone.
+                      </p>
+                      <p>
+                        Mengubah layout biodata menjadi vertikal, menyesuaikan
+                        ukuran font, dan padding.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Langkah 4: JavaScript -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-js text-3xl text-yellow-400"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Langkah 4: Menambahkan Interaktivitas dengan JavaScript
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                JavaScript membuat website kita interaktif. Di langkah ini, kita
+                akan menambahkan fungsionalitas toggle dark mode yang dapat
+                diaktifkan oleh pengguna.
+              </p>
+
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                  <i class="fas fa-magic text-yellow-400 mr-2"></i>
+                  File: script.js
+                </h3>
+                <p class="text-slate-300 mb-4">
+                  Salin kode JavaScript berikut ke dalam file
+                  <code class="bg-gray-800 px-2 py-1 rounded">script.js</code>:
+                </p>
+
+                <div class="bg-gray-900 p-4 rounded-lg overflow-x-auto">
+                  <pre><code class="language-javascript">// Menunggu hingga seluruh konten HTML selesai dimuat
+document.addEventListener('DOMContentLoaded', function() {
+    // Mendapatkan referensi ke tombol toggle dan body
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    
+    // Memeriksa apakah pengguna sebelumnya memilih dark mode
+    const savedTheme = localStorage.getItem('theme');
+    
+    // Jika ada tema yang disimpan, terapkan tema tersebut
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        darkModeToggle.textContent = '☀️ Light Mode';
+    } else {
+        darkModeToggle.textContent = '🌙 Dark Mode';
+    }
+    
+    // Menambahkan event listener untuk klik tombol
+    darkModeToggle.addEventListener('click', function() {
+        // Toggle class 'dark-mode' pada body
+        body.classList.toggle('dark-mode');
+        
+        // Memeriksa apakah dark mode aktif
+        const isDarkMode = body.classList.contains('dark-mode');
+        
+        // Mengubah teks tombol berdasarkan status dark mode
+        if (isDarkMode) {
+            darkModeToggle.textContent = '☀️ Light Mode';
+            // Menyimpan preferensi tema ke localStorage
+            localStorage.setItem('theme', 'dark');
+        } else {
+            darkModeToggle.textContent = '🌙 Dark Mode';
+            // Menyimpan preferensi tema ke localStorage
+            localStorage.setItem('theme', 'light');
+        }
+        
+        // Menambahkan efek feedback visual
+        darkModeToggle.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            darkModeToggle.style.transform = 'scale(1)';
+        }, 150);
+    });
+    
+    // Menambahkan animasi masuk untuk elemen kartu
+    const cards = document.querySelectorAll('.card, .jadwal-kuliah');
+    cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, index * 200);
+    });
+    
+    // Menambahkan efek hover yang lebih smooth untuk social links
+    const socialLinks = document.querySelectorAll('.social-link');
+    socialLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.3s ease';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.transition = 'all 0.3s ease';
+        });
+    });
+});
+
+// Fungsi untuk menampilkan notifikasi (opsional)
+function showNotification(message, type = 'info') {
+    const notification = document.createElement('div');
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 12px 20px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        z-index: 1001;
+        transition: all 0.3s ease;
+    `;
+    
+    if (type === 'success') {
+        notification.style.backgroundColor = '#48bb78';
+    } else if (type === 'error') {
+        notification.style.backgroundColor = '#f56565';
+    } else {
+        notification.style.backgroundColor = '#4299e1';
+    }
+    
+    document.body.appendChild(notification);
+    
+    // Menghilangkan notifikasi setelah 3 detik
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateX(-50%) translateY(-20px)';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 300);
+    }, 3000);
+}</code></pre>
+                </div>
+
+                <div
+                  class="mt-6 bg-yellow-500/10 p-4 rounded-lg border border-yellow-500/20"
+                >
+                  <h4
+                    class="font-semibold text-yellow-300 mb-2 flex items-center"
+                  >
+                    <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
+                    JavaScript:
+                  </h4>
+                  <div class="text-slate-300 space-y-4">
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        1. Event DOMContentLoaded
+                      </h5>
+                      <p>
+                        <code
+                          >document.addEventListener('DOMContentLoaded',
+                          function() { ... })</code
+                        >
+                      </p>
+                      <p>
+                        Menunggu sampai seluruh dokumen HTML selesai dimuat
+                        sebelum menjalankan kode JavaScript. Ini penting karena
+                        kita perlu memastikan elemen yang akan dimanipulasi
+                        sudah tersedia.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        2. Mendapatkan Elemen DOM
+                      </h5>
+                      <p>
+                        <code
+                          >const darkModeToggle =
+                          document.getElementById('darkModeToggle')</code
+                        >
+                        - Mendapatkan tombol dark mode berdasarkan ID.
+                      </p>
+                      <p>
+                        <code>const body = document.body</code> - Mendapatkan
+                        referensi ke elemen body.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        3. Mengelola Preferensi Tema
+                      </h5>
+                      <p>
+                        <code
+                          >const savedTheme =
+                          localStorage.getItem('theme')</code
+                        >
+                        - Mengecek apakah pengguna sudah memilih tema
+                        sebelumnya.
+                      </p>
+                      <p>
+                        <code>localStorage</code> adalah API browser untuk
+                        menyimpan data secara persisten.
+                      </p>
+                      <p>
+                        Jika tema 'dark' tersimpan, tambahkan class 'dark-mode'
+                        ke body dan ubah teks tombol.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        4. Event Listener untuk Tombol
+                      </h5>
+                      <p>
+                        <code
+                          >darkModeToggle.addEventListener('click', function() {
+                          ... })</code
+                        >
+                        - Menambahkan pendengar event klik ke tombol.
+                      </p>
+                      <p>
+                        <code>body.classList.toggle('dark-mode')</code> -
+                        Menambah atau menghapus class 'dark-mode' dari body.
+                      </p>
+                      <p>
+                        <code>classList.contains('dark-mode')</code> - Mengecek
+                        apakah class 'dark-mode' ada di body.
+                      </p>
+                      <p>
+                        Berdasarkan status dark mode, ubah teks tombol dan
+                        simpan preferensi ke localStorage.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        5. Efek Visual dan Animasi
+                      </h5>
+                      <p>
+                        <code
+                          >darkModeToggle.style.transform = 'scale(0.95)'</code
+                        >
+                        - Efek tekan saat tombol diklik.
+                      </p>
+                      <p>
+                        <code>setTimeout()</code> - Mengembalikan ukuran tombol
+                        setelah 150ms.
+                      </p>
+                      <p>
+                        <code
+                          >document.querySelectorAll('.card,
+                          .jadwal-kuliah')</code
+                        >
+                        - Memilih semua elemen kartu dan jadwal.
+                      </p>
+                      <p>
+                        Animasi masuk: Setiap kartu muncul dengan delay yang
+                        berbeda (index * 200ms).
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        6. Logika Fungsi showNotification (Opsional)
+                      </h5>
+                      <p>Membuat elemen div baru untuk notifikasi.</p>
+                      <p>
+                        <code>document.createElement('div')</code> - Membuat
+                        elemen HTML baru.
+                      </p>
+                      <p>
+                        <code>document.body.appendChild(notification)</code> -
+                        Menambahkan notifikasi ke body.
+                      </p>
+                      <p>
+                        <code>setTimeout()</code> - Menghapus notifikasi setelah
+                        3 detik dengan efek fade out.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h5 class="font-semibold text-slate-100 mb-1">
+                        7. Alur Kerja Dark Mode
+                      </h5>
+                      <ol class="list-decimal list-inside ml-4 space-y-1">
+                        <li>User mengklik tombol dark mode</li>
+                        <li>
+                          JavaScript menambah/hapus class 'dark-mode' dari body
+                        </li>
+                        <li>
+                          CSS dengan selector body.dark-mode mengaktifkan
+                          styling tema gelap
+                        </li>
+                        <li>Preferensi tema disimpan di localStorage</li>
+                        <li>
+                          Saat halaman dimuat ulang, JavaScript membaca
+                          localStorage dan menerapkan tema yang disimpan
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Langkah 5: Testing -->
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-solid fa-rocket text-3xl text-green-400"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Langkah 5: Testing dan Menjalankan Website
+                </h2>
+              </div>
+
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                  <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                  Cara Menjalankan Website:
+                </h3>
+                <ol class="list-decimal list-inside text-slate-300 space-y-4">
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Buka File HTML:</b> Buka folder proyek Anda dan klik dua
+                    kali pada file
+                    <code class="bg-gray-800 px-2 py-1 rounded"
+                      >index.html</code
+                    >
+                    untuk membukanya di browser default
+                  </li>
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Testing di VS Code:</b> Jika menggunakan VS Code, Anda
+                    dapat menginstal ekstensi
+                    <code class="bg-gray-800 px-2 py-1 rounded"
+                      >Live Server</code
+                    >
+                    lalu klik kanan pada file HTML dan pilih "Open with Live
+                    Server" untuk melihat perubahan secara real-time
+                  </li>
+                  <li class="pb-2 border-b border-white/10">
+                    <b>Testing Fitur:</b>
+                    <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                      <li>Coba klik tombol "Dark Mode" untuk mengubah tema</li>
+                      <li>
+                        Refresh halaman dan periksa apakah preferensi tema
+                        tersimpan
+                      </li>
+                      <li>
+                        Ubah ukuran jendela browser untuk melihat responsivitas
+                      </li>
+                      <li>
+                        Coba akses dari perangkat mobile atau gunakan dev tools
+                        browser
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            <!-- Kesimpulan -->
+            <section class="text-center pt-12 border-t border-white/10">
+              <div class="flex justify-center items-center gap-4 mb-6">
+                <i
+                  class="fa-solid fa-graduation-cap text-4xl text-emerald-400"
+                ></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Kesimpulan dan Langkah Selanjutnya
+                </h2>
+              </div>
+
+              <div class="max-w-4xl mx-auto">
+                <div
+                  class="bg-black/20 p-6 rounded-2xl border border-white/10 mb-6"
+                >
+                  <h3
+                    class="font-semibold text-xl text-slate-100 mb-4 text-left"
+                  >
+                    Yang Telah Dipelajari:
+                  </h3>
+                  <div class="grid md:grid-cols-3 gap-6 text-left">
+                    <div class="bg-sky-500/10 p-4 rounded-lg">
+                      <h4 class="font-semibold text-sky-300 mb-2">
+                        HTML Structure
+                      </h4>
+                      <ul class="text-slate-300 text-sm space-y-1">
+                        <li>Struktur dokumen HTML5</li>
+                        <li>Elemen semantik</li>
+                        <li>Form dan tabel</li>
+                        <li>Atribut class dan ID</li>
+                      </ul>
+                    </div>
+                    <div class="bg-blue-500/10 p-4 rounded-lg">
+                      <h4 class="font-semibold text-blue-300 mb-2">
+                        CSS Styling
+                      </h4>
+                      <ul class="text-slate-300 text-sm space-y-1">
+                        <li>Flexbox layout</li>
+                        <li>CSS Variables</li>
+                        <li>Responsive design</li>
+                        <li>Transitions & animations</li>
+                      </ul>
+                    </div>
+                    <div class="bg-yellow-500/10 p-4 rounded-lg">
+                      <h4 class="font-semibold text-yellow-300 mb-2">
+                        JavaScript
+                      </h4>
+                      <ul class="text-slate-300 text-sm space-y-1">
+                        <li>DOM manipulation</li>
+                        <li>Event handling</li>
+                        <li>localStorage API</li>
+                        <li>Dynamic styling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="text-slate-300 leading-relaxed text-lg">
+                  Selamat! Anda telah berhasil menyelesaikan tutorial membuat
+                  website biodata pribadi. Ini adalah langkah pertama yang
+                  penting dalam perjalanan web development Anda. Teruslah
+                  berlatih, eksperimen dengan kode, dan jangan takut untuk
+                  mencoba hal-hal baru. Setiap developer profesional pernah
+                  menjadi pemula suatu hari!
+                </p>
+
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                  <a
+                    href="pengenalan.html"
+                    class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    <i class="fas fa-arrow-left mr-2"></i>Kembali ke Pengenalan
+                  </a>
+                  <a
+                    href="kesan-pesan.html"
+                    class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg font-semibold transition-colors"
+                  >
+                    Kesan & Pesan<i class="fas fa-arrow-right ml-2"></i>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

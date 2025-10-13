@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengenalan Teknologi Web | Cristoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="text-slate-200">
+    <div class="aurora-background"></div>
+    <div class="relative min-h-screen">
+      <nav
+        class="sticky top-4 z-50 mx-4 md:mx-8 bg-gray-900/50 dark:bg-gray-900/50 backdrop-blur-xl shadow-2xl shadow-black/20 rounded-2xl border border-white/10 dark:border-white/10 fade-in-up"
+      >
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <a href="index.html" class="text-2xl font-bold text-white"
+            >Cristoval P.S.</a
+          >
+          <ul
+            class="hidden md:flex items-center font-semibold text-gray-200 space-x-8"
+          >
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="pengenalan.html"
+                class="hover:text-white transition-colors"
+                >Pengenalan</a
+              >
+            </li>
+            <li>
+              <a href="tutorial.html" class="hover:text-white transition-colors"
+                >Tutorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="kesan-pesan.html"
+                class="hover:text-white transition-colors"
+                >Kesan & Pesan</a
+              >
+            </li>
+          </ul>
+          <div id="darkModeToggleContainer"></div>
+        </div>
+      </nav>
+
+      <main class="container mx-auto p-4 md:p-8">
+        <div
+          class="bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/20 border border-white/10 p-8 md:p-12 fade-in-up"
+        >
+          <section class="text-center mb-16">
+            <div class="flex justify-center items-center gap-4">
+              <i class="fa-solid fa-compass text-5xl text-sky-400"></i>
+              <h1 class="text-5xl font-bold text-gradient leading-tight">
+                Perjalanan Menjelajahi Dunia Pengembangan Web
+              </h1>
+            </div>
+            <p
+              class="text-slate-300 max-w-3xl mx-auto mt-6 text-lg leading-relaxed"
+            >
+              Dalam era digital yang terus berkembang, kemampuan untuk memahami
+              dan menguasai teknologi web menjadi semakin penting. Artikel ini
+              akan membawa Anda melalui fondasi dasar yang membentuk setiap
+              website modern, menjelaskan peran masing-masing teknologi, dan
+              bagaimana mereka bekerja sama untuk menciptakan pengalaman digital
+              yang kita nikmati sehari-hari.
+            </p>
+            <div
+              class="mt-8 p-6 bg-black/20 rounded-lg border border-white/10 inline-block"
+            >
+              <p class="text-slate-200 italic text-base">
+                "Mempelajari pengembangan web ibarat belajar bahasa baru.
+                <b>HTML</b> adalah kosakata dasarnya, <b>CSS</b> adalah seni
+                penyusunan kalimat yang indah, dan <b>JavaScript</b> adalah
+                kemampuan untuk berinteraksi dan merespons dalam percakapan."
+              </p>
+            </div>
+          </section>
+
+          <div class="space-y-12">
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  HTML: Fondasi Setiap Website
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                HTML (HyperText Markup Language) adalah tulang punggung dari web
+                modern. Sebagai bahasa markup, HTML bertanggung jawab untuk
+                menentukan struktur dan konten dasar dari sebuah halaman web.
+                Setiap elemen yang Anda lihat di browser—mulai dari judul,
+                paragraf, gambar, hingga tautan—ditentukan menggunakan tag HTML.
+              </p>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Perkembangan HTML telah melalui berbagai versi, dengan HTML5
+                sebagai standar terkini yang mendukung elemen semantik seperti
+                <code class="text-amber-300">&lt;header&gt;</code>,
+                <code class="text-amber-300">&lt;nav&gt;</code>,
+                <code class="text-amber-300">&lt;article&gt;</code>, dan
+                <code class="text-amber-300">&lt;footer&gt;</code>.
+                Elemen-elemen ini tidak hanya membantu pengembang dalam
+                mengorganisir kode, tetapi juga meningkatkan aksesibilitas dan
+                SEO (Search Engine Optimization).
+              </p>
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-lg text-slate-100 mb-2">
+                  Struktur Dasar HTML:
+                </h3>
+                <pre
+                  class="bg-gray-900 text-sm p-4 rounded-lg overflow-x-auto"
+                ><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Judul Utama Website&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Beranda&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;Tentang&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h2&gt;Judul Artikel&lt;/h2&gt;
+      &lt;p&gt;Ini adalah konten artikel...&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+  
+  &lt;footer&gt;
+    &lt;p&gt;Hak Cipta &copy; 2023&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              </div>
+            </section>
+
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  CSS: Seni Mendesain Web
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                CSS (Cascading Style Sheets) adalah bahasa yang mengubah halaman
+                web dari dokumen teks biasa menjadi pengalaman visual yang
+                menarik. Dengan CSS, pengembang dapat mengontrol segala aspek
+                tampilan—mulai dari warna, font, tata letak, hingga animasi dan
+                transisi.
+              </p>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Salah satu konsep terpenting dalam CSS adalah "Cascading" yang
+                berarti aturan gaya dapat ditimpa berdasarkan spesifisitas dan
+                urutan. CSS3, versi terbaru CSS, memperkenalkan fitur-fitur
+                canggih seperti Flexbox, Grid, animasi, transisi, dan media
+                queries untuk desain responsif.
+              </p>
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-lg text-slate-100 mb-2">
+                  Contoh CSS Modern dengan Flexbox:
+                </h3>
+                <pre
+                  class="bg-gray-900 text-sm p-4 rounded-lg overflow-x-auto"
+                ><code class="language-css">/* Container menggunakan Flexbox */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Kartu dengan efek hover */
+.card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Media Query untuk perangkat mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}</code></pre>
+              </div>
+            </section>
+
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  JavaScript: Menghidupkan Web
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                JavaScript adalah bahasa pemrograman yang mengubah website
+                statis menjadi aplikasi web yang dinamis dan interaktif. Sejak
+                diperkenalkan pada tahun 1995, JavaScript telah berkembang dari
+                bahasa sederhana untuk validasi form menjadi ekosistem yang
+                powerful yang mendukung aplikasi web kompleks.
+              </p>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Dengan munculnya Node.js, JavaScript kini dapat berjalan di
+                server maupun client, memungkinkan pengembangan full-stack
+                dengan satu bahasa. Framework modern seperti React, Vue, dan
+                Angular dibangun di atas JavaScript, memperluas kemampuannya
+                untuk membangun antarmuka pengguna yang kompleks.
+              </p>
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-lg text-slate-100 mb-2">
+                  Contoh JavaScript Modern (ES6+):
+                </h3>
+                <pre
+                  class="bg-gray-900 text-sm p-4 rounded-lg overflow-x-auto"
+                ><code class="language-javascript">// Menggunakan arrow functions dan const
+const toggleTheme = () => {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  
+  // Menyimpan preferensi tema di localStorage
+  const isDark = body.classList.contains('dark-mode');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+};
+
+// Menggunakan async/await untuk operasi asynchronous
+const fetchUserData = async (userId) => {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    if (!response.ok) throw new Error('Network response was not ok');
+    
+    const userData = await response.json();
+    displayUserProfile(userData);
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+    showErrorMessage('Gagal memuat data pengguna');
+  }
+};
+
+// Menggunakan destructuring dan template literals
+const createUserCard = ({ name, email, avatar }) => {
+  return `
+    &lt;div class="user-card"&gt;
+      &lt;img src="${avatar}" alt="${name}"&gt;
+      &lt;h3&gt;${name}&lt;/h3&gt;
+      &lt;p&gt;${email}&lt;/p&gt;
+    &lt;/div&gt;
+  `;
+};</code></pre>
+              </div>
+            </section>
+
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <svg
+                  class="w-10 h-10 text-cyan-400"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2-1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,13.382,14.976,12,12.001,12C9.027,12,7.666,10.618,6.001,12z"
+                  ></path>
+                </svg>
+                <h2 class="text-3xl font-bold text-white">
+                  Tailwind CSS: Pendekatan Utility-First
+                </h2>
+              </div>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Tailwind CSS merevolusi cara kita menulis CSS dengan pendekatan
+                utility-first. Alih-alih menulis CSS kustom untuk setiap
+                komponen, Tailwind menyediakan sekumpulan class utility yang
+                dapat dikombinasikan langsung di HTML untuk membangun desain
+                yang kompleks.
+              </p>
+              <p class="text-slate-300 mb-4 leading-relaxed">
+                Keunggulan utama Tailwind adalah produktivitas yang tinggi,
+                konsistensi desain, dan optimasi otomatis. Dengan PurgeCSS yang
+                terintegrasi, hanya class yang digunakan yang akan disertakan
+                dalam file CSS akhir, menghasilkan ukuran file yang minimal dan
+                performa yang optimal.
+              </p>
+              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <h3 class="font-semibold text-lg text-slate-100 mb-2">
+                  Membuat Komponen dengan Tailwind:
+                </h3>
+                <pre
+                  class="bg-gray-900 text-sm p-4 rounded-lg overflow-x-auto"
+                ><code class="language-html">&lt;!-- Kartu produk dengan Tailwind --&gt;
+&lt;div class="max-w-sm mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105"&gt;
+  &lt;div class="p-6"&gt;
+    &lt;div class="flex items-center justify-between mb-4"&gt;
+      &lt;span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded"&gt;
+        Baru
+      &lt;/span&gt;
+      &lt;div class="flex text-yellow-400"&gt;
+        &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+        &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+        &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+        &lt;i class="fas fa-star"&gt;&lt;/i&gt;
+        &lt;i class="far fa-star"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2"&gt;
+      Nama Produk
+    &lt;/h3&gt;
+    
+    &lt;p class="text-gray-600 dark:text-gray-300 mb-4"&gt;
+      Deskripsi singkat tentang produk yang menarik perhatian pengguna.
+    &lt;/p&gt;
+    
+    &lt;div class="flex items-center justify-between"&gt;
+      &lt;span class="text-2xl font-bold text-gray-900 dark:text-white"&gt;
+        Rp 299.000
+      &lt;/span&gt;
+      &lt;button class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition duration-200"&gt;
+        Beli Sekarang
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </section>
+
+            <section>
+              <div class="flex items-center gap-4 mb-4">
+                <i class="fa-solid fa-lightbulb text-4xl text-amber-400"></i>
+                <h2 class="text-3xl font-bold text-white">Tips untuk Pemula</h2>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                  <h3 class="font-semibold text-lg text-slate-100 mb-3">
+                    Mulai dengan Fondasi yang Kuat
+                  </h3>
+                  <ul class="text-slate-300 space-y-2">
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span
+                        >Pelajari HTML dan CSS secara mendalam sebelum beralih
+                        ke JavaScript</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span
+                        >Pahami konsep semantic HTML untuk aksesibilitas dan
+                        SEO</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span
+                        >Latihan membuat layout dengan Flexbox dan CSS
+                        Grid</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                  <h3 class="font-semibold text-lg text-slate-100 mb-3">
+                    Praktik Terbaik Pengembangan
+                  </h3>
+                  <ul class="text-slate-300 space-y-2">
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span>Gunakan version control (Git) dari awal</span>
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span
+                        >Pelajari responsive design dan mobile-first
+                        approach</span
+                      >
+                    </li>
+                    <li class="flex items-start">
+                      <i class="fa-solid fa-check text-green-400 mt-1 mr-2"></i>
+                      <span
+                        >Terus eksplorasi dan jangan takut mencoba teknologi
+                        baru</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <section class="text-center pt-12 border-t border-white/10">
+              <div class="flex justify-center items-center gap-4">
+                <i class="fa-solid fa-code-merge text-4xl text-emerald-400"></i>
+                <h2 class="text-3xl font-bold text-white">
+                  Kolaborasi Teknologi dalam Ekosistem Web Modern
+                </h2>
+              </div>
+              <p class="text-slate-300 max-w-3xl mx-auto mt-4 leading-relaxed">
+                Teknologi web tidak berdiri sendiri; mereka adalah bagian dari
+                ekosistem yang saling terhubung. HTML memberikan struktur, CSS
+                menangani presentasi, JavaScript menambahkan interaktivitas, dan
+                framework seperti Tailwind mempercepat proses development.
+                Pemahaman yang mendalam tentang bagaimana masing-masing
+                teknologi ini berinteraksi adalah kunci untuk menjadi pengembang
+                web yang sukses. Teruslah belajar, bereksperimen, dan
+                berkolaborasi—karena dunia web development terus berevolusi
+                dengan inovasi baru setiap harinya.
+              </p>
+              <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <div
+                  class="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-3 rounded-lg font-semibold"
+                >
+                  <i class="fab fa-html5 mr-2"></i>HTML5
+                </div>
+                <div
+                  class="bg-gradient-to-r from-green-500 to-blue-500 px-6 py-3 rounded-lg font-semibold"
+                >
+                  <i class="fab fa-css3-alt mr-2"></i>CSS3
+                </div>
+                <div
+                  class="bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-3 rounded-lg font-semibold"
+                >
+                  <i class="fab fa-js mr-2"></i>JavaScript
+                </div>
+                <div
+                  class="bg-gradient-to-r from-cyan-500 to-teal-500 px-6 py-3 rounded-lg font-semibold"
+                >
+                  <i class="fas fa-wind mr-2"></i>Tailwind CSS
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

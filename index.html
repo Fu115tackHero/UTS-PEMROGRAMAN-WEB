@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Perkenalan Diri | Cristoval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="text-slate-200">
+    <div class="aurora-background"></div>
+
+    <div class="relative min-h-screen">
+      <nav
+        class="sticky top-4 z-50 mx-4 md:mx-8 bg-gray-900/50 dark:bg-gray-900/50 backdrop-blur-xl shadow-2xl shadow-black/20 rounded-2xl border border-white/10 dark:border-white/10 fade-in-up"
+      >
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <a href="index.html" class="text-2xl font-bold text-white"
+            >Cristoval P.S.</a
+          >
+          <ul
+            class="hidden md:flex items-center font-semibold text-gray-200 space-x-8"
+          >
+            <li>
+              <a href="index.html" class="hover:text-white transition-colors"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="pengenalan.html"
+                class="hover:text-white transition-colors"
+                >Pengenalan</a
+              >
+            </li>
+            <li>
+              <a href="tutorial.html" class="hover:text-white transition-colors"
+                >Tutorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="kesan-pesan.html"
+                class="hover:text-white transition-colors"
+                >Kesan & Pesan</a
+              >
+            </li>
+          </ul>
+          <div id="darkModeToggleContainer"></div>
+        </div>
+      </nav>
+
+      <main class="container mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div class="lg:col-span-2 fade-in-up" style="animation-delay: 200ms">
+            <div
+              class="bg-gray-900/50 backdrop-blur-xl p-6 rounded-3xl shadow-2xl shadow-black/20 text-center flex flex-col items-center border border-white/10"
+            >
+              <img
+                src="images/disturbing image.jpeg"
+                alt="Foto Cristoval"
+                class="w-40 h-40 object-cover rounded-full ring-4 ring-sky-400/50 shadow-lg"
+              />
+              <h1 class="text-4xl font-bold mt-4 text-gradient">
+                Cristoval Pratama Siahaan
+              </h1>
+              <p class="text-md text-slate-400 font-medium">
+                Mahasiswa Ilmu Komputer
+              </p>
+              <p class="mt-4 text-sm text-slate-300 font-medium">
+                NIM: 241401057 | KOM: C
+              </p>
+              <p class="mt-4 text-center text-sm max-w-sm font-medium">
+                Saya adalah Mahasiswa Ilmu Komputer Semester 3 di USU dengan
+                peminatan di bidang <strong>Software Engineering</strong>.
+              </p>
+
+              <div class="text-left w-full mt-6 space-y-6">
+                <div>
+                  <h3 class="font-bold text-lg text-sky-400 mb-3">Hobi</h3>
+                  <ul class="space-y-2 text-slate-100 font-medium">
+                    <li class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-gamepad w-5 text-center text-sky-400/80"
+                      ></i>
+                      Bermain Video Game
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <i
+                        class="fa-brands fa-youtube w-5 text-center text-red-500/80"
+                      ></i>
+                      Menonton YouTube
+                    </li>
+                    <li class="flex items-center gap-3">
+                      <i
+                        class="fa-solid fa-mobile-screen-button w-5 text-center text-emerald-400/80"
+                      ></i>
+                      Doom Scrolling
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-lg text-sky-400 mb-3">Moto</h3>
+                  <p
+                    class="p-4 bg-black/20 rounded-lg border-l-4 border-sky-400 italic text-slate-200 font-medium"
+                  >
+                    "Perlahan Tapi Pasti!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="lg:col-span-3 bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/20 border border-white/10 p-6 fade-in-up"
+            style="animation-delay: 400ms"
+          >
+            <h2 class="text-3xl font-bold mb-4 text-white">Jadwal Kuliah</h2>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left">
+                <thead class="border-b-2 border-white/10">
+                  <tr>
+                    <th class="p-4 font-semibold text-white">Hari</th>
+                    <th class="p-4 font-semibold text-white whitespace-nowrap">
+                      Pukul
+                    </th>
+                    <th class="p-4 font-semibold text-white">Mata Kuliah</th>
+                    <th class="p-4 font-semibold text-white">Lokasi</th>
+                    <th class="p-4 font-semibold text-white">Pengajar</th>
+                  </tr>
+                </thead>
+                <tbody class="align-baseline font-medium text-slate-200">
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td class="p-4">Senin</td>
+                    <td class="p-4 whitespace-nowrap">14:50 - 16:30</td>
+                    <td class="p-4 text-white">Praktikum Pemrograman Web</td>
+                    <td class="p-4">Lab Komputer</td>
+                    <td class="p-4">Muhammad Dzakwan (Aslab)</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td rowspan="2" class="p-4 align-top">Selasa</td>
+                    <td class="p-4 whitespace-nowrap">10:30 - 12:10</td>
+                    <td class="p-4 text-white">IELTS Preparation</td>
+                    <td class="p-4">D-101</td>
+                    <td class="p-4">
+                      Drs. Yulianus Harefa GradDipEd TESOL., MEd TESOL
+                    </td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td class="p-4 whitespace-nowrap">12:20 - 14:50</td>
+                    <td class="p-4 text-white">
+                      Teknologi Komunikasi dan Informasi
+                    </td>
+                    <td class="p-4">2.5</td>
+                    <td class="p-4">Dr. Feni Khairifa & Dr. Mucklis</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td rowspan="2" class="p-4 align-top">Rabu</td>
+                    <td class="p-4 whitespace-nowrap">08:00 - 10:30</td>
+                    <td class="p-4 text-white">Struktur Data</td>
+                    <td class="p-4">D-104</td>
+                    <td class="p-4">Anandhini M. Nababan & Insidini Fawwaz</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td class="p-4 whitespace-nowrap">14:40 - 17:10</td>
+                    <td class="p-4 text-white">Pemrograman Web</td>
+                    <td class="p-4">D-102</td>
+                    <td class="p-4">Dewi Sartika Ginting & Nurrahmadayeni</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td class="p-4">Kamis</td>
+                    <td class="p-4 whitespace-nowrap">08:00 - 09:40</td>
+                    <td class="p-4 text-white">Praktikum Struktur Data</td>
+                    <td class="p-4">Lab Komputer</td>
+                    <td class="p-4">Parulian Dwi Reslia (Aslab)</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td rowspan="3" class="p-4 align-top">Jumat</td>
+                    <td class="p-4 whitespace-nowrap">08:00 - 10:30</td>
+                    <td class="p-4 text-white">Basis Data</td>
+                    <td class="p-4">D-101</td>
+                    <td class="p-4">Dewi Sartika Ginting & Insidini Fawwaz</td>
+                  </tr>
+                  <tr
+                    class="border-b border-white/10 transition-colors hover:bg-white/5"
+                  >
+                    <td class="p-4 whitespace-nowrap">10:30 - 12:10</td>
+                    <td class="p-4 text-white">Wirausaha Digital</td>
+                    <td class="p-4">D-105</td>
+                    <td class="p-4">Henny Febriana & Fauzan Nurahmadi</td>
+                  </tr>
+                  <tr class="transition-colors hover:bg-white/5">
+                    <td class="p-4 whitespace-nowrap">14:40 - 16:20</td>
+                    <td class="p-4 text-white">Praktikum Basis Data</td>
+                    <td class="p-4">Lab Komputer</td>
+                    <td class="p-4">Alvian (Aslab)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
