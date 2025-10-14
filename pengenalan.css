@@ -1,0 +1,44 @@
+/* =========================================== */
+/* === Style Khusus Mobile untuk pengenalan.html === */
+/* =========================================== */
+
+/* Aturan ini hanya akan aktif jika lebar layar 768px atau kurang (ukuran tablet ke bawah) */
+@media (max-width: 768px) {
+  /* Mengecilkan padding utama konten agar tidak terlalu sempit */
+  .main-content {
+    padding: 1.5rem; /* 24px */
+  }
+
+  /* Mengecilkan judul utama halaman */
+  .main-title {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+
+  /* Mengecilkan ikon di sebelah judul utama */
+  .main-title-icon {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  /* Mengecilkan judul setiap section (HTML, CSS, dll.) */
+  .section-title {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  /* Mengecilkan ikon di setiap section */
+  .section-icon {
+    font-size: 1.875rem; /* 30px */
+  }
+
+  /* Mengecilkan font paragraf penjelasan */
+  .description-text {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5rem; /* 24px */
+  }
+
+  /* Mengecilkan font di dalam blok kode agar tidak terlalu besar */
+  .code-block {
+    font-size: 0.75rem; /* 12px */
+  }
+}

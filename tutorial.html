@@ -15,16 +15,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tutorial.css" />
   </head>
   <body class="text-slate-200">
     <div class="aurora-background"></div>
+
+    <!-- Navbar -->
     <nav
-      class="fixed top-0 left-0 right-0 z-50 bg-gray-900/50 backdrop-blur-xl shadow-lg border-b border-white/10 fade-in-up"
+      class="fixed top-0 left-0 right-0 z-50 bg-gray-900/50 backdrop-blur-xl shadow-lg border-b border-white/10"
     >
       <div class="container mx-auto flex justify-between items-center p-4">
-        <a href="index.html" class="text-2xl font-bold text-white"
-          >Cristoval P.S.</a
-        >
+        <div class="flex items-center gap-3">
+          <!-- Hamburger -->
+          <button
+            id="hamburgerBtn"
+            class="md:hidden text-white text-2xl focus:outline-none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <a href="index.html" class="text-2xl font-bold text-white">
+            Cristoval P.S.
+          </a>
+        </div>
+
+        <!-- Menu (Desktop) -->
         <ul
           class="hidden md:flex items-center font-semibold text-gray-200 space-x-8"
         >
@@ -51,25 +66,73 @@
             >
           </li>
         </ul>
+
         <div id="darkModeToggleContainer"></div>
       </div>
     </nav>
+
+    <!-- Sidebar (Mobile) -->
+    <aside
+      id="sidebar"
+      class="fixed top-0 left-0 h-full w-64 bg-gray-900 shadow-lg transform -translate-x-full transition-transform duration-300 z-[60]"
+    >
+      <div
+        class="p-4 flex justify-between items-center border-b border-white/10"
+      >
+        <h2 class="text-xl font-bold text-white">Menu</h2>
+        <button id="closeSidebar" class="text-white text-2xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="p-4 space-y-4 font-semibold">
+        <li>
+          <a href="index.html" class="block hover:text-sky-400"
+            ><i class="fa-solid fa-house mr-3"></i> Beranda</a
+          >
+        </li>
+        <li>
+          <a href="pengenalan.html" class="block hover:text-sky-400"
+            ><i class="fa-solid fa-user mr-3"></i> Pengenalan</a
+          >
+        </li>
+        <li>
+          <a href="tutorial.html" class="block hover:text-sky-400"
+            ><i class="fa-solid fa-book mr-3"></i> Tutorial</a
+          >
+        </li>
+        <li>
+          <a href="kesan-pesan.html" class="block hover:text-sky-400"
+            ><i class="fa-solid fa-comments mr-3"></i> Kesan & Pesan</a
+          >
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-50"></div>
+
+    <!-- Main Content -->
     <div class="relative min-h-screen pt-20">
       <main class="container mx-auto p-4 md:p-8">
         <div
-          class="bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/20 border border-white/10 p-8 md:p-12 fade-in-up"
+          class="bg-gray-900/50 backdrop-blur-xl rounded-3xl shadow-2xl shadow-black/20 border border-white/10 p-6 md:p-12 fade-in-up"
         >
-          <section class="text-center mb-16">
-            <div class="flex justify-center items-center gap-4">
+          <!-- Header Section -->
+          <section class="text-center mb-12 md:mb-16">
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6"
+            >
               <i
-                class="fa-solid fa-person-chalkboard text-5xl text-sky-400"
+                class="fa-solid fa-person-chalkboard text-4xl md:text-5xl text-sky-400"
               ></i>
-              <h1 class="text-5xl font-bold text-gradient leading-tight">
+              <h1
+                class="text-3xl md:text-5xl font-bold text-gradient leading-tight"
+              >
                 Tutorial Lengkap: Membuat Website Biodata Pribadi
               </h1>
             </div>
             <p
-              class="text-slate-300 max-w-3xl mx-auto mt-6 text-lg leading-relaxed"
+              class="text-slate-300 max-w-3xl mx-auto mt-4 md:mt-6 text-base md:text-lg leading-relaxed"
             >
               Panduan komprehensif untuk pemula yang ingin membuat website
               biodata pribadi pertama mereka. Tutorial ini akan membimbing Anda
@@ -77,72 +140,79 @@
               bagian kode, sehingga Anda benar-benar memahami apa yang sedang
               dibuat.
             </p>
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <div
+              class="mt-6 md:mt-8 flex flex-wrap justify-center gap-3 md:gap-4"
+            >
               <div
-                class="bg-sky-500/20 px-4 py-2 rounded-lg border border-sky-500/30"
+                class="bg-sky-500/20 px-3 py-1 md:px-4 md:py-2 rounded-lg border border-sky-500/30 text-sm md:text-base"
               >
                 <i class="fab fa-html5 text-orange-500 mr-2"></i>HTML
               </div>
               <div
-                class="bg-blue-500/20 px-4 py-2 rounded-lg border border-blue-500/30"
+                class="bg-blue-500/20 px-3 py-1 md:px-4 md:py-2 rounded-lg border border-blue-500/30 text-sm md:text-base"
               >
                 <i class="fab fa-css3-alt text-blue-500 mr-2"></i>CSS
               </div>
               <div
-                class="bg-yellow-500/20 px-4 py-2 rounded-lg border border-yellow-500/30"
+                class="bg-yellow-500/20 px-3 py-1 md:px-4 md:py-2 rounded-lg border border-yellow-500/30 text-sm md:text-base"
               >
                 <i class="fab fa-js text-yellow-400 mr-2"></i>JavaScript
               </div>
               <div
-                class="bg-green-500/20 px-4 py-2 rounded-lg border border-green-500/30"
+                class="bg-green-500/20 px-3 py-1 md:px-4 md:py-2 rounded-lg border border-green-500/30 text-sm md:text-base"
               >
                 <i class="fas fa-mobile-alt text-green-400 mr-2"></i>Responsif
               </div>
             </div>
           </section>
 
-          <div class="space-y-12">
-            <!-- Persiapan -->
+          <div class="space-y-10 md:space-y-12">
+            <!-- Persiapan Section -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-solid fa-toolbox text-3xl text-amber-400"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-solid fa-toolbox text-2xl md:text-3xl text-amber-400"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Persiapan: Software dan Tools yang Diperlukan
                 </h2>
               </div>
-              <p class="text-slate-300 mb-6 leading-relaxed">
+              <p
+                class="text-slate-300 mb-6 leading-relaxed text-base md:text-lg"
+              >
                 Sebelum memulai perjalanan coding, kita perlu menyiapkan
                 alat-alat yang akan digunakan. Berikut adalah software yang
                 perlu diinstal dan dipersiapkan:
               </p>
 
-              <div class="grid md:grid-cols-2 gap-6 mb-6">
-                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div
+                  class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+                >
                   <h3
-                    class="font-semibold text-xl text-slate-100 mb-3 flex items-center"
+                    class="font-semibold text-lg md:text-xl text-slate-100 mb-3 flex items-center"
                   >
                     <i class="fas fa-code text-blue-400 mr-2"></i>
                     Text Editor: Visual Studio Code
                   </h3>
-                  <p class="text-slate-300 mb-4">
+                  <p class="text-slate-300 mb-4 text-sm md:text-base">
                     VS Code adalah text editor modern yang memiliki fitur
                     lengkap untuk web development. Sangat direkomendasikan untuk
                     pemula karena antarmukanya yang user-friendly.
                   </p>
 
-                  <h4 class="font-semibold text-slate-100 mb-3">
+                  <h4
+                    class="font-semibold text-slate-100 mb-3 text-base md:text-lg"
+                  >
                     Tutorial Instalasi VS Code:
                   </h4>
-                  <div
-                    class="aspect-w-16 aspect-h-9 mb-4 rounded-lg overflow-hidden"
-                  >
+                  <div class="video-container mb-4">
                     <iframe
                       src="https://www.youtube.com/embed/xkMfMJn5Smg"
                       title="Tutorial Instalasi VS Code"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
-                      class="w-full h-64 rounded-lg"
                     ></iframe>
                   </div>
 
@@ -151,7 +221,7 @@
                       href="https://code.visualstudio.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors text-sm md:text-base"
                     >
                       <i class="fas fa-download mr-2"></i>Download VS Code
                       (Official)
@@ -159,14 +229,16 @@
                   </div>
                 </div>
 
-                <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
+                <div
+                  class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+                >
                   <h3
-                    class="font-semibold text-xl text-slate-100 mb-3 flex items-center"
+                    class="font-semibold text-lg md:text-xl text-slate-100 mb-3 flex items-center"
                   >
                     <i class="fas fa-globe text-green-400 mr-2"></i>
                     Web Browser: Chrome/Firefox
                   </h3>
-                  <p class="text-slate-300 mb-4">
+                  <p class="text-slate-300 mb-4 text-sm md:text-base">
                     Gunakan browser modern seperti Chrome atau Firefox untuk
                     testing. Browser ini memiliki developer tools yang sangat
                     membantu dalam debugging.
@@ -176,7 +248,7 @@
                       href="https://www.google.com/chrome/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors text-sm md:text-base"
                     >
                       <i class="fab fa-chrome mr-2"></i>Download Google Chrome
                     </a>
@@ -184,7 +256,7 @@
                       href="https://www.mozilla.org/firefox/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors"
+                      class="block font-medium text-sky-400 hover:text-sky-300 transition-colors text-sm md:text-base"
                     >
                       <i class="fab fa-firefox mr-2"></i>Download Mozilla
                       Firefox
@@ -196,36 +268,46 @@
 
             <!-- Langkah 1: Struktur Folder -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-solid fa-folder-tree text-3xl text-orange-500"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-solid fa-folder-tree text-2xl md:text-3xl text-orange-500"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Langkah 1: Membuat Struktur Folder Proyek
                 </h2>
               </div>
-              <p class="text-slate-300 mb-4 leading-relaxed">
+              <p
+                class="text-slate-300 mb-4 leading-relaxed text-base md:text-lg"
+              >
                 Organisasi file yang baik adalah kunci dari proyek web yang
                 rapi. Kita akan membuat struktur folder yang logis untuk
                 menyimpan semua file proyek.
               </p>
 
               <div
-                class="bg-black/20 p-6 rounded-2xl border border-white/10 mb-6"
+                class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10 mb-6"
               >
-                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+                <h3
+                  class="font-semibold text-lg md:text-xl text-slate-100 mb-4"
+                >
                   <i class="fas fa-list-ol text-purple-400 mr-2"></i>
                   Langkah-langkah Membuat Struktur:
                 </h3>
-                <ol class="list-decimal list-inside text-slate-300 space-y-4">
+                <ol
+                  class="list-decimal list-inside text-slate-300 space-y-4 text-sm md:text-base"
+                >
                   <li class="pb-2 border-b border-white/10">
                     <b>Buat Folder Utama:</b> Buat folder baru di komputer
                     dengan nama
-                    <code class="bg-gray-800 px-2 py-1 rounded"
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
                       >website-biodata-saya</code
                     >
                   </li>
                   <li class="pb-2 border-b border-white/10">
                     <b>Buka di VS Code:</b> Buka VS Code, lalu pilih
-                    <code class="bg-gray-800 px-2 py-1 rounded"
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
                       >File > Open Folder</code
                     >
                     dan pilih folder yang baru saja dibuat
@@ -234,11 +316,11 @@
                     <b>Buat Subfolder dan File:</b> Di dalam panel Explorer VS
                     Code, buat struktur berikut:
                     <div
-                      class="mt-2 bg-gray-900 p-4 rounded-lg font-mono text-sm"
+                      class="mt-2 bg-gray-900 p-3 md:p-4 rounded-lg font-mono text-xs md:text-sm overflow-x-auto"
                     >
                       <div>website-biodata-saya/</div>
                       <div class="ml-4">├── images/</div>
-                      <div class="ml-8">└── foto-profil.jpg</div>
+                      <div class="ml-6 md:ml-8">└── foto-profil.jpg</div>
                       <div class="ml-4">├── index.html</div>
                       <div class="ml-4">├── style.css</div>
                       <div class="ml-4">└── script.js</div>
@@ -247,9 +329,13 @@
                   <li>
                     <b>Tambahkan Foto:</b> Cari foto profil Anda dan simpan di
                     folder
-                    <code class="bg-gray-800 px-2 py-1 rounded">images</code>
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
+                      >images</code
+                    >
                     dengan nama
-                    <code class="bg-gray-800 px-2 py-1 rounded"
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
                       >foto-profil.jpg</code
                     >
                   </li>
@@ -257,12 +343,16 @@
               </div>
 
               <div
-                class="bg-amber-500/10 p-4 rounded-lg border border-amber-500/20"
+                class="bg-amber-500/10 p-3 md:p-4 rounded-lg border border-amber-500/20"
               >
-                <h4 class="font-semibold text-amber-300 mb-2 flex items-center">
+                <h4
+                  class="font-semibold text-amber-300 mb-2 flex items-center text-base md:text-lg"
+                >
                   <i class="fas fa-lightbulb mr-2"></i>Tips Penting:
                 </h4>
-                <ul class="text-slate-300 list-disc list-inside space-y-1">
+                <ul
+                  class="text-slate-300 list-disc list-inside space-y-1 text-sm md:text-base"
+                >
                   <li>Gunakan nama file yang konsisten dan deskriptif</li>
                   <li>
                     Hindari spasi dalam nama file, gunakan tanda hubung (-)
@@ -275,33 +365,45 @@
 
             <!-- Langkah 2: HTML -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-brands fa-html5 text-3xl text-orange-500"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-brands fa-html5 text-2xl md:text-3xl text-orange-500"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Langkah 2: Membangun Struktur dengan HTML
                 </h2>
               </div>
-              <p class="text-slate-300 mb-4 leading-relaxed">
+              <p
+                class="text-slate-300 mb-4 leading-relaxed text-base md:text-lg"
+              >
                 HTML adalah kerangka website kita. Di langkah ini, kita akan
                 membuat struktur dasar halaman web yang berisi semua elemen yang
                 ingin ditampilkan.
               </p>
 
-              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
-                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+              <div
+                class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+              >
+                <h3
+                  class="font-semibold text-lg md:text-xl text-slate-100 mb-4"
+                >
                   <i class="fas fa-file-code text-orange-400 mr-2"></i>
                   File: index.html
                 </h3>
-                <p class="text-slate-300 mb-4">
+                <p class="text-slate-300 mb-4 text-sm md:text-base">
                   Salin kode berikut ke dalam file
-                  <code class="bg-gray-800 px-2 py-1 rounded">index.html</code>
+                  <code class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
+                    >index.html</code
+                  >
                   Anda:
                 </p>
 
                 <div
-                  class="bg-gray-900 p-4 rounded-lg overflow-x-auto max-h-96"
+                  class="bg-gray-900 p-3 md:p-4 rounded-lg overflow-x-auto max-h-96"
                 >
-                  <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+                  <pre
+                    class="text-xs md:text-sm"
+                  ><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang="id"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -403,17 +505,21 @@
                 </div>
 
                 <div
-                  class="mt-6 bg-blue-500/10 p-4 rounded-lg border border-blue-500/20"
+                  class="mt-4 md:mt-6 bg-blue-500/10 p-3 md:p-4 rounded-lg border border-blue-500/20"
                 >
                   <h4
-                    class="font-semibold text-blue-300 mb-2 flex items-center"
+                    class="font-semibold text-blue-300 mb-2 flex items-center text-base md:text-lg"
                   >
                     <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
                     Struktur HTML:
                   </h4>
-                  <div class="text-slate-300 space-y-4">
+                  <div
+                    class="text-slate-300 space-y-3 md:space-y-4 text-sm md:text-base"
+                  >
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         1. Deklarasi DOCTYPE dan Elemen HTML
                       </h5>
                       <p>
@@ -427,7 +533,9 @@
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         2. Bagian Head (Informasi Meta)
                       </h5>
                       <p>
@@ -449,7 +557,9 @@
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         3. Bagian Body (Konten yang Ditampilkan)
                       </h5>
                       <p>
@@ -489,7 +599,9 @@
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         4. Class dan ID yang Digunakan
                       </h5>
                       <p>
@@ -519,32 +631,44 @@
 
             <!-- Langkah 3: CSS -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-brands fa-css3-alt text-3xl text-blue-500"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-brands fa-css3-alt text-2xl md:text-3xl text-blue-500"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Langkah 3: Menghias dengan CSS
                 </h2>
               </div>
-              <p class="text-slate-300 mb-4 leading-relaxed">
+              <p
+                class="text-slate-300 mb-4 leading-relaxed text-base md:text-lg"
+              >
                 CSS memberikan kehidupan visual pada struktur HTML kita. Di
                 langkah ini, kita akan membuat website terlihat menarik dengan
                 warna, layout, dan efek visual.
               </p>
 
-              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
-                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+              <div
+                class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+              >
+                <h3
+                  class="font-semibold text-lg md:text-xl text-slate-100 mb-4"
+                >
                   <i class="fas fa-palette text-blue-400 mr-2"></i>
                   File: style.css
                 </h3>
-                <p class="text-slate-300 mb-4">
+                <p class="text-slate-300 mb-4 text-sm md:text-base">
                   Salin kode CSS berikut ke dalam file
-                  <code class="bg-gray-800 px-2 py-1 rounded">style.css</code>:
+                  <code class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
+                    >style.css</code
+                  >:
                 </p>
 
                 <div
-                  class="bg-gray-900 p-4 rounded-lg overflow-x-auto max-h-96"
+                  class="bg-gray-900 p-3 md:p-4 rounded-lg overflow-x-auto max-h-96"
                 >
-                  <pre><code class="language-css">/* ===== VARIABEL CSS UNTUK WARNA ===== */
+                  <pre
+                    class="text-xs md:text-sm"
+                  ><code class="language-css">/* ===== VARIABEL CSS UNTUK WARNA ===== */
 :root {
     --primary-color: #4a90e2;
     --secondary-color: #2b6cb0;
@@ -857,17 +981,21 @@ body.dark-mode .moto {
                 </div>
 
                 <div
-                  class="mt-6 bg-blue-500/10 p-4 rounded-lg border border-blue-500/20"
+                  class="mt-4 md:mt-6 bg-blue-500/10 p-3 md:p-4 rounded-lg border border-blue-500/20"
                 >
                   <h4
-                    class="font-semibold text-blue-300 mb-2 flex items-center"
+                    class="font-semibold text-blue-300 mb-2 flex items-center text-base md:text-lg"
                   >
                     <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
                     CSS:
                   </h4>
-                  <div class="text-slate-300 space-y-4">
+                  <div
+                    class="text-slate-300 space-y-3 md:space-y-4 text-sm md:text-base"
+                  >
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         1. Variabel CSS (:root)
                       </h5>
                       <p>
@@ -890,7 +1018,9 @@ body.dark-mode .moto {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         2. Reset dan Style Dasar
                       </h5>
                       <p>
@@ -908,7 +1038,9 @@ body.dark-mode .moto {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         3. Styling Komponen
                       </h5>
                       <p>
@@ -946,7 +1078,9 @@ body.dark-mode .moto {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         4. Dark Mode Styles
                       </h5>
                       <p>
@@ -961,7 +1095,9 @@ body.dark-mode .moto {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         5. Media Queries (Responsive Design)
                       </h5>
                       <p>
@@ -984,30 +1120,42 @@ body.dark-mode .moto {
 
             <!-- Langkah 4: JavaScript -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-brands fa-js text-3xl text-yellow-400"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-brands fa-js text-2xl md:text-3xl text-yellow-400"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Langkah 4: Menambahkan Interaktivitas dengan JavaScript
                 </h2>
               </div>
-              <p class="text-slate-300 mb-4 leading-relaxed">
+              <p
+                class="text-slate-300 mb-4 leading-relaxed text-base md:text-lg"
+              >
                 JavaScript membuat website kita interaktif. Di langkah ini, kita
                 akan menambahkan fungsionalitas toggle dark mode yang dapat
                 diaktifkan oleh pengguna.
               </p>
 
-              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
-                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+              <div
+                class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+              >
+                <h3
+                  class="font-semibold text-lg md:text-xl text-slate-100 mb-4"
+                >
                   <i class="fas fa-magic text-yellow-400 mr-2"></i>
                   File: script.js
                 </h3>
-                <p class="text-slate-300 mb-4">
+                <p class="text-slate-300 mb-4 text-sm md:text-base">
                   Salin kode JavaScript berikut ke dalam file
-                  <code class="bg-gray-800 px-2 py-1 rounded">script.js</code>:
+                  <code class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
+                    >script.js</code
+                  >:
                 </p>
 
-                <div class="bg-gray-900 p-4 rounded-lg overflow-x-auto">
-                  <pre><code class="language-javascript">// Menunggu hingga seluruh konten HTML selesai dimuat
+                <div class="bg-gray-900 p-3 md:p-4 rounded-lg overflow-x-auto">
+                  <pre
+                    class="text-xs md:text-sm"
+                  ><code class="language-javascript">// Menunggu hingga seluruh konten HTML selesai dimuat
 document.addEventListener('DOMContentLoaded', function() {
     // Mendapatkan referensi ke tombol toggle dan body
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -1115,17 +1263,21 @@ function showNotification(message, type = 'info') {
                 </div>
 
                 <div
-                  class="mt-6 bg-yellow-500/10 p-4 rounded-lg border border-yellow-500/20"
+                  class="mt-4 md:mt-6 bg-yellow-500/10 p-3 md:p-4 rounded-lg border border-yellow-500/20"
                 >
                   <h4
-                    class="font-semibold text-yellow-300 mb-2 flex items-center"
+                    class="font-semibold text-yellow-300 mb-2 flex items-center text-base md:text-lg"
                   >
                     <i class="fas fa-info-circle mr-2"></i>Penjelasan Mendetail
                     JavaScript:
                   </h4>
-                  <div class="text-slate-300 space-y-4">
+                  <div
+                    class="text-slate-300 space-y-3 md:space-y-4 text-sm md:text-base"
+                  >
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         1. Event DOMContentLoaded
                       </h5>
                       <p>
@@ -1143,7 +1295,9 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         2. Mendapatkan Elemen DOM
                       </h5>
                       <p>
@@ -1160,7 +1314,9 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         3. Mengelola Preferensi Tema
                       </h5>
                       <p>
@@ -1182,7 +1338,9 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         4. Event Listener untuk Tombol
                       </h5>
                       <p>
@@ -1207,7 +1365,9 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         5. Efek Visual dan Animasi
                       </h5>
                       <p>
@@ -1234,7 +1394,9 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         6. Logika Fungsi showNotification (Opsional)
                       </h5>
                       <p>Membuat elemen div baru untuk notifikasi.</p>
@@ -1253,10 +1415,14 @@ function showNotification(message, type = 'info') {
                     </div>
 
                     <div>
-                      <h5 class="font-semibold text-slate-100 mb-1">
+                      <h5
+                        class="font-semibold text-slate-100 mb-1 text-base md:text-lg"
+                      >
                         7. Alur Kerja Dark Mode
                       </h5>
-                      <ol class="list-decimal list-inside ml-4 space-y-1">
+                      <ol
+                        class="list-decimal list-inside ml-4 space-y-1 text-sm md:text-base"
+                      >
                         <li>User mengklik tombol dark mode</li>
                         <li>
                           JavaScript menambah/hapus class 'dark-mode' dari body
@@ -1279,23 +1445,32 @@ function showNotification(message, type = 'info') {
 
             <!-- Langkah 5: Testing -->
             <section>
-              <div class="flex items-center gap-4 mb-4">
-                <i class="fa-solid fa-rocket text-3xl text-green-400"></i>
-                <h2 class="text-3xl font-bold text-white">
+              <div class="flex items-center gap-3 md:gap-4 mb-4">
+                <i
+                  class="fa-solid fa-rocket text-2xl md:text-3xl text-green-400"
+                ></i>
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Langkah 5: Testing dan Menjalankan Website
                 </h2>
               </div>
 
-              <div class="bg-black/20 p-6 rounded-2xl border border-white/10">
-                <h3 class="font-semibold text-xl text-slate-100 mb-4">
+              <div
+                class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10"
+              >
+                <h3
+                  class="font-semibold text-lg md:text-xl text-slate-100 mb-4"
+                >
                   <i class="fas fa-check-circle text-green-400 mr-2"></i>
                   Cara Menjalankan Website:
                 </h3>
-                <ol class="list-decimal list-inside text-slate-300 space-y-4">
+                <ol
+                  class="list-decimal list-inside text-slate-300 space-y-4 text-sm md:text-base"
+                >
                   <li class="pb-2 border-b border-white/10">
                     <b>Buka File HTML:</b> Buka folder proyek Anda dan klik dua
                     kali pada file
-                    <code class="bg-gray-800 px-2 py-1 rounded"
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
                       >index.html</code
                     >
                     untuk membukanya di browser default
@@ -1303,7 +1478,8 @@ function showNotification(message, type = 'info') {
                   <li class="pb-2 border-b border-white/10">
                     <b>Testing di VS Code:</b> Jika menggunakan VS Code, Anda
                     dapat menginstal ekstensi
-                    <code class="bg-gray-800 px-2 py-1 rounded"
+                    <code
+                      class="bg-gray-800 px-2 py-1 rounded text-xs md:text-sm"
                       >Live Server</code
                     >
                     lalu klik kanan pada file HTML dan pilih "Open with Live
@@ -1311,7 +1487,9 @@ function showNotification(message, type = 'info') {
                   </li>
                   <li class="pb-2 border-b border-white/10">
                     <b>Testing Fitur:</b>
-                    <ul class="list-disc list-inside ml-6 mt-2 space-y-1">
+                    <ul
+                      class="list-disc list-inside ml-4 md:ml-6 mt-2 space-y-1 text-sm md:text-base"
+                    >
                       <li>Coba klik tombol "Dark Mode" untuk mengubah tema</li>
                       <li>
                         Refresh halaman dan periksa apakah preferensi tema
@@ -1331,53 +1509,63 @@ function showNotification(message, type = 'info') {
             </section>
 
             <!-- Kesimpulan -->
-            <section class="text-center pt-12 border-t border-white/10">
-              <div class="flex justify-center items-center gap-4 mb-6">
+            <section class="text-center pt-8 md:pt-12 border-t border-white/10">
+              <div
+                class="flex justify-center items-center gap-3 md:gap-4 mb-4 md:mb-6"
+              >
                 <i
-                  class="fa-solid fa-graduation-cap text-4xl text-emerald-400"
+                  class="fa-solid fa-graduation-cap text-3xl md:text-4xl text-emerald-400"
                 ></i>
-                <h2 class="text-3xl font-bold text-white">
+                <h2 class="text-2xl md:text-3xl font-bold text-white">
                   Kesimpulan dan Langkah Selanjutnya
                 </h2>
               </div>
 
               <div class="max-w-4xl mx-auto">
                 <div
-                  class="bg-black/20 p-6 rounded-2xl border border-white/10 mb-6"
+                  class="bg-black/20 p-4 md:p-6 rounded-2xl border border-white/10 mb-4 md:mb-6"
                 >
                   <h3
-                    class="font-semibold text-xl text-slate-100 mb-4 text-left"
+                    class="font-semibold text-lg md:text-xl text-slate-100 mb-3 md:mb-4 text-left"
                   >
                     Yang Telah Dipelajari:
                   </h3>
-                  <div class="grid md:grid-cols-3 gap-6 text-left">
-                    <div class="bg-sky-500/10 p-4 rounded-lg">
-                      <h4 class="font-semibold text-sky-300 mb-2">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-left"
+                  >
+                    <div class="bg-sky-500/10 p-3 md:p-4 rounded-lg">
+                      <h4
+                        class="font-semibold text-sky-300 mb-2 text-base md:text-lg"
+                      >
                         HTML Structure
                       </h4>
-                      <ul class="text-slate-300 text-sm space-y-1">
+                      <ul class="text-slate-300 text-xs md:text-sm space-y-1">
                         <li>Struktur dokumen HTML5</li>
                         <li>Elemen semantik</li>
                         <li>Form dan tabel</li>
                         <li>Atribut class dan ID</li>
                       </ul>
                     </div>
-                    <div class="bg-blue-500/10 p-4 rounded-lg">
-                      <h4 class="font-semibold text-blue-300 mb-2">
+                    <div class="bg-blue-500/10 p-3 md:p-4 rounded-lg">
+                      <h4
+                        class="font-semibold text-blue-300 mb-2 text-base md:text-lg"
+                      >
                         CSS Styling
                       </h4>
-                      <ul class="text-slate-300 text-sm space-y-1">
+                      <ul class="text-slate-300 text-xs md:text-sm space-y-1">
                         <li>Flexbox layout</li>
                         <li>CSS Variables</li>
                         <li>Responsive design</li>
                         <li>Transitions & animations</li>
                       </ul>
                     </div>
-                    <div class="bg-yellow-500/10 p-4 rounded-lg">
-                      <h4 class="font-semibold text-yellow-300 mb-2">
+                    <div class="bg-yellow-500/10 p-3 md:p-4 rounded-lg">
+                      <h4
+                        class="font-semibold text-yellow-300 mb-2 text-base md:text-lg"
+                      >
                         JavaScript
                       </h4>
-                      <ul class="text-slate-300 text-sm space-y-1">
+                      <ul class="text-slate-300 text-xs md:text-sm space-y-1">
                         <li>DOM manipulation</li>
                         <li>Event handling</li>
                         <li>localStorage API</li>
@@ -1387,7 +1575,9 @@ function showNotification(message, type = 'info') {
                   </div>
                 </div>
 
-                <p class="text-slate-300 leading-relaxed text-lg">
+                <p
+                  class="text-slate-300 leading-relaxed text-base md:text-lg mb-6"
+                >
                   Selamat! Anda telah berhasil menyelesaikan tutorial membuat
                   website biodata pribadi. Ini adalah langkah pertama yang
                   penting dalam perjalanan web development Anda. Teruslah
@@ -1396,16 +1586,18 @@ function showNotification(message, type = 'info') {
                   menjadi pemula suatu hari!
                 </p>
 
-                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <div
+                  class="mt-6 md:mt-8 flex flex-wrap justify-center gap-3 md:gap-4"
+                >
                   <a
                     href="pengenalan.html"
-                    class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-lg font-semibold transition-colors"
+                    class="bg-sky-500 hover:bg-sky-600 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors text-sm md:text-base"
                   >
                     <i class="fas fa-arrow-left mr-2"></i>Kembali ke Pengenalan
                   </a>
                   <a
                     href="kesan-pesan.html"
-                    class="bg-purple-500 hover:bg-purple-600 px-6 py-3 rounded-lg font-semibold transition-colors"
+                    class="bg-purple-500 hover:bg-purple-600 px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors text-sm md:text-base"
                   >
                     Kesan & Pesan<i class="fas fa-arrow-right ml-2"></i>
                   </a>
@@ -1416,7 +1608,6 @@ function showNotification(message, type = 'info') {
         </div>
       </main>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

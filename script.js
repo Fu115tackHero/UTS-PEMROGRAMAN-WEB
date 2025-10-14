@@ -47,3 +47,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const sidebar = document.getElementById("sidebar");
+const overlay = document.getElementById("overlay");
+const closeSidebar = document.getElementById("closeSidebar");
+
+hamburgerBtn.addEventListener("click", () => {
+  sidebar.classList.remove("-translate-x-full");
+  overlay.classList.remove("hidden");
+  overlay.classList.add("show");
+});
+
+closeSidebar.addEventListener("click", () => {
+  sidebar.classList.add("-translate-x-full");
+  overlay.classList.add("hide");
+  setTimeout(() => {
+    overlay.classList.remove("show", "hide");
+    overlay.classList.add("hidden");
+  }, 300);
+});
+
+overlay.addEventListener("click", () => {
+  sidebar.classList.add("-translate-x-full");
+  overlay.classList.add("hide");
+  setTimeout(() => {
+    overlay.classList.remove("show", "hide");
+    overlay.classList.add("hidden");
+  }, 300);
+});

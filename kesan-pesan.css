@@ -1,0 +1,67 @@
+/* ============================================= */
+/* === Style Khusus Mobile untuk kesan-pesan.html === */
+/* ============================================= */
+
+/* Aturan ini hanya akan aktif jika lebar layar 768px atau kurang */
+@media (max-width: 768px) {
+  /* Mengecilkan padding utama konten */
+  .main-content-kesan {
+    padding: 1.5rem; /* 24px */
+  }
+
+  /* Mengecilkan judul utama halaman */
+  .main-title-kesan {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+
+  /* Mengecilkan ikon di sebelah judul utama */
+  .main-title-icon-kesan {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  /* Mengecilkan judul setiap section (Kesan & Pesan) */
+  .section-title-kesan {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  /* Mengecilkan font paragraf penjelasan */
+  .description-text-kesan {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5rem; /* 24px */
+  }
+}
+
+/* =========================================== */
+/* === Kode Tambahan untuk Merapikan Tampilan Mobile === */
+/* =========================================== */
+
+/* Aturan ini hanya aktif di layar dengan lebar 768px ke bawah */
+@media (max-width: 768px) {
+  /*
+    MEMPERBAIKI MASALAH UTAMA:
+    Memaksa semua paragraf agar rata kiri (left-aligned) di mobile.
+    Ini akan menghilangkan jarak antar kata yang aneh dan membuat teks lebih natural.
+  */
+  p {
+    text-align: left !important;
+  }
+
+  /* Mengurangi padding di dalam kartu konten utama agar tidak terlalu sempit */
+  main .fade-in-up {
+    padding: 1.5rem !important; /* 24px */
+  }
+
+  /* Menyesuaikan ukuran semua judul utama (H1) di mobile */
+  h1 {
+    font-size: 1.875rem !important; /* 30px */
+    line-height: 2.25rem !important;
+  }
+
+  /* Menyesuaikan ukuran semua sub-judul (H2) di mobile */
+  h2 {
+    font-size: 1.5rem !important; /* 24px */
+    line-height: 2rem !important;
+  }
+}
