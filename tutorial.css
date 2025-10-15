@@ -16,22 +16,72 @@
   border-radius: 0.5rem;
 }
 
-/* Mobile menu styles */
-.mobile-menu {
-  display: none;
+/* Mencegah overflow halaman secara umum */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
-.mobile-menu.active {
-  display: block;
-}
-
-/* Code block responsive adjustments */
-pre {
-  font-size: 0.875rem;
-}
-
+/* Media query untuk layar dengan lebar maksimal 768px (tablet dan mobile) */
 @media (max-width: 768px) {
+  /* ======================================================== */
+
+  main.container {
+    padding: 1rem;
+  }
+
+  h1.text-gradient {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h2.text-2xl {
+    font-size: 1.5rem;
+  }
+
+  p.text-slate-300 {
+    font-size: 0.95rem;
+  }
+
+  .space-y-10 > * + *,
+  .space-y-12 > * + * {
+    margin-top: 2.5rem;
+  }
+
   pre {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .bg-gray-900 pre code {
+    font-size: 0.8rem;
+  }
+
+  .max-h-96 {
+    max-height: 300px;
+  }
+
+  .flex-wrap.justify-center.gap-3 > div {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  a.bg-sky-500,
+  a.bg-purple-500 {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .jadwal-kuliah {
+    overflow-x: auto;
+  }
+
+  .jadwal-kuliah::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .jadwal-kuliah::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 4px;
   }
 }
